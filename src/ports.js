@@ -7910,12 +7910,12 @@ var _elm_lang$html$Html_Events$Options = F2(
 		return {stopPropagation: a, preventDefault: b};
 	});
 
-var _evancz$elm_todomvc$Spelling$send = _elm_lang$core$Native_Platform.outgoingPort(
+var _pchmiele$functional_tricity_2017$Spelling$send = _elm_lang$core$Native_Platform.outgoingPort(
 	'send',
 	function (v) {
 		return v;
 	});
-var _evancz$elm_todomvc$Spelling$update = F2(
+var _pchmiele$functional_tricity_2017$Spelling$update = F2(
 	function (msg, model) {
 		var _p0 = msg;
 		switch (_p0.ctor) {
@@ -7931,7 +7931,7 @@ var _evancz$elm_todomvc$Spelling$update = F2(
 				return {
 					ctor: '_Tuple2',
 					_0: model,
-					_1: _evancz$elm_todomvc$Spelling$send(model.word)
+					_1: _pchmiele$functional_tricity_2017$Spelling$send(model.word)
 				};
 			default:
 				return {
@@ -7943,27 +7943,27 @@ var _evancz$elm_todomvc$Spelling$update = F2(
 				};
 		}
 	});
-var _evancz$elm_todomvc$Spelling$updateTime = _elm_lang$core$Native_Platform.incomingPort('updateTime', _elm_lang$core$Json_Decode$string);
-var _evancz$elm_todomvc$Spelling$Model = F2(
+var _pchmiele$functional_tricity_2017$Spelling$updateTime = _elm_lang$core$Native_Platform.incomingPort('updateTime', _elm_lang$core$Json_Decode$string);
+var _pchmiele$functional_tricity_2017$Spelling$Model = F2(
 	function (a, b) {
 		return {word: a, currentTime: b};
 	});
-var _evancz$elm_todomvc$Spelling$init = {
+var _pchmiele$functional_tricity_2017$Spelling$init = {
 	ctor: '_Tuple2',
-	_0: A2(_evancz$elm_todomvc$Spelling$Model, '', ''),
+	_0: A2(_pchmiele$functional_tricity_2017$Spelling$Model, '', ''),
 	_1: _elm_lang$core$Platform_Cmd$none
 };
-var _evancz$elm_todomvc$Spelling$Time = function (a) {
+var _pchmiele$functional_tricity_2017$Spelling$Time = function (a) {
 	return {ctor: 'Time', _0: a};
 };
-var _evancz$elm_todomvc$Spelling$subscriptions = function (model) {
-	return _evancz$elm_todomvc$Spelling$updateTime(_evancz$elm_todomvc$Spelling$Time);
+var _pchmiele$functional_tricity_2017$Spelling$subscriptions = function (model) {
+	return _pchmiele$functional_tricity_2017$Spelling$updateTime(_pchmiele$functional_tricity_2017$Spelling$Time);
 };
-var _evancz$elm_todomvc$Spelling$Send = {ctor: 'Send'};
-var _evancz$elm_todomvc$Spelling$Change = function (a) {
+var _pchmiele$functional_tricity_2017$Spelling$Send = {ctor: 'Send'};
+var _pchmiele$functional_tricity_2017$Spelling$Change = function (a) {
 	return {ctor: 'Change', _0: a};
 };
-var _evancz$elm_todomvc$Spelling$view = function (model) {
+var _pchmiele$functional_tricity_2017$Spelling$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{ctor: '[]'},
@@ -7973,7 +7973,7 @@ var _evancz$elm_todomvc$Spelling$view = function (model) {
 				_elm_lang$html$Html$input,
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html_Events$onInput(_evancz$elm_todomvc$Spelling$Change),
+					_0: _elm_lang$html$Html_Events$onInput(_pchmiele$functional_tricity_2017$Spelling$Change),
 					_1: {ctor: '[]'}
 				},
 				{ctor: '[]'}),
@@ -7983,7 +7983,7 @@ var _evancz$elm_todomvc$Spelling$view = function (model) {
 					_elm_lang$html$Html$button,
 					{
 						ctor: '::',
-						_0: _elm_lang$html$Html_Events$onClick(_evancz$elm_todomvc$Spelling$Send),
+						_0: _elm_lang$html$Html_Events$onClick(_pchmiele$functional_tricity_2017$Spelling$Send),
 						_1: {ctor: '[]'}
 					},
 					{
@@ -8006,13 +8006,13 @@ var _evancz$elm_todomvc$Spelling$view = function (model) {
 			}
 		});
 };
-var _evancz$elm_todomvc$Spelling$main = _elm_lang$html$Html$program(
-	{init: _evancz$elm_todomvc$Spelling$init, view: _evancz$elm_todomvc$Spelling$view, update: _evancz$elm_todomvc$Spelling$update, subscriptions: _evancz$elm_todomvc$Spelling$subscriptions})();
+var _pchmiele$functional_tricity_2017$Spelling$main = _elm_lang$html$Html$program(
+	{init: _pchmiele$functional_tricity_2017$Spelling$init, view: _pchmiele$functional_tricity_2017$Spelling$view, update: _pchmiele$functional_tricity_2017$Spelling$update, subscriptions: _pchmiele$functional_tricity_2017$Spelling$subscriptions})();
 
 var Elm = {};
 Elm['Spelling'] = Elm['Spelling'] || {};
-if (typeof _evancz$elm_todomvc$Spelling$main !== 'undefined') {
-    _evancz$elm_todomvc$Spelling$main(Elm['Spelling'], 'Spelling', undefined);
+if (typeof _pchmiele$functional_tricity_2017$Spelling$main !== 'undefined') {
+    _pchmiele$functional_tricity_2017$Spelling$main(Elm['Spelling'], 'Spelling', undefined);
 }
 
 if (typeof define === "function" && define['amd'])

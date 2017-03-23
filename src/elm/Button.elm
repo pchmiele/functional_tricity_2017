@@ -1,5 +1,6 @@
-import Html exposing (Html, button, div, text)
+import Html exposing (Html, Attribute, button, div, text)
 import Html.Events exposing (onClick)
+import Html.Attributes exposing (style)
 
 main : Program Never Model Msg
 main =  Html.beginnerProgram 
@@ -38,6 +39,16 @@ view : Model -> Html Msg
 view model =
   div []
     [ button [ onClick Decrement ] [ text "-" ]
-    , div [] [ text (toString model) ]
+    , div [ countStyle ] [ text (toString model) ]
     , button [ onClick Increment ] [ text "+" ]
+    ]
+
+countStyle : Attribute msg
+countStyle =
+  style
+    [ ("font-size", "20px")
+    , ("font-family", "monospace")
+    , ("display", "inline-block")
+    , ("width", "50px")
+    , ("text-align", "center")
     ]
